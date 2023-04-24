@@ -10,6 +10,7 @@ import regex as re
 
 def main():
     bean_data = {
+        "country": [],
         "subdivision": [],
         "type": [],
         "million_60kgs_bag": [],       
@@ -83,6 +84,8 @@ def main():
 
                     vals1 = [float(v) for v in vals1]
                 
+                    # append country
+                    bean_data["country"] += [country] * len(years)
                     # append type
                     bean_data["type"] += ["Arabica"] * len(years)
                     # append subdiv
@@ -96,6 +99,8 @@ def main():
 
                     vals2 = [float(v) for v in vals2]
                     
+                    # append country
+                    bean_data["country"] += [country] * len(years)
                     # append type
                     bean_data["type"] += ["Robusta"] * len(years)
                     # append subdiv
@@ -112,6 +117,8 @@ def main():
                     # convert all to int
                     vals = [float(v) for v in vals]
 
+                    # append country
+                    bean_data["country"] += [country] * len(years)
                     # append type (by default Arabica)
                     bean_data["type"] += ["Arabica"] * len(years)
                     # append subdiv
@@ -127,7 +134,7 @@ def main():
 
             # save to df and write
             output_data = pd.DataFrame(bean_data)
-            path = os.join(csv_outpath_prod, country, "coffee_production_2010_2023.csv")
+            path = os.path.join(csv_outpath_prod, "br_coffee_production_2010_2023.csv")
             output_data.to_csv(path, index=False, doublequote=False)
 
     return

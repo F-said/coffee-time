@@ -11,6 +11,7 @@ import regex as re
 
 def main():
     tree_data = {
+        "country": [],
         "nonbear_mill_trees": [],
         "bear_mill_trees": [], 
         "nonbear_thous_hect": [],    
@@ -76,32 +77,39 @@ def main():
             # get bearing & non tree data
             nonbeart = tdf.iloc[1, :].tolist()
             nonbeart.remove("Non-Bearing")
-            nonbeart = [float(v) for v in nonbeart]
+            nonbeart = [int(v) for v in nonbeart]
 
             tree_data["nonbear_mill_trees"] += nonbeart
 
             beart = tdf.iloc[2, :].tolist()
             beart.remove("Bearing")
-            beart = [float(v) for v in beart]
+            beart = [int(v) for v in beart]
 
             tree_data["bear_mill_trees"] += beart
-
-            tree_data["year"] += years
 
             # get bearing & non hectare area data
             nonbearh = tdf.iloc[4, :].tolist()
             nonbearh.remove("Non-Bearing")
-            nonbearh = [float(v) for v in nonbearh]
+            nonbearh = [int(v) for v in nonbearh]
 
-            tree_data["nonbear_mill_trees"] += nonbearh
+            tree_data["nonbear_thous_hect"] += nonbearh
 
             bearh = tdf.iloc[5, :].tolist()
-            bearh.remove("Bearing")
-            bearh = [float(v) for v in bearh]
+            bearh.remove("Harvested")
+            bearh = [int(v) for v in bearh]
 
-            tree_data["bear_mill_trees"] += bearh
+            tree_data["bear_thous_hect"] += bearh
 
+            # append years
             tree_data["year"] += years
+            # append country
+            tree_data["country"] += [country] * len(years)
+
+            # save to df and tree_data
+            output_data = pd.DataFrame(tree_data)
+
+            path = os.path.join(csv_outpath_growth, "br_coffee_growth_2010_2023.csv")
+            output_data.to_csv(path, index=False, doublequote=False)
 
     return
 
