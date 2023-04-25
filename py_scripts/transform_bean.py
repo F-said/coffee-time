@@ -128,9 +128,9 @@ def main():
 
                 # append values to list
                 bean_data["million_60kgs_bag"] += vals
-            
-            # remove predicted values post (most-updated csv has actual values) (TODO)
-            # manual fix for now
+
+                # remove predicted values post (most-updated csv has actual values) 
+                # TODO: manual
 
             # save to df and write
             output_data = pd.DataFrame(bean_data)

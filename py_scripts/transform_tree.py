@@ -2,12 +2,12 @@
 A script to clean and combine all extracted csvs
 """
 
+# TODO: TREES PDF IS BUGGY FOR 2017_br
+
 import os
-from config import countries, csv_outpath_prod, csv_outpath_growth
+from config import countries, csv_outpath_growth
 
 import pandas as pd
-import numpy as np
-import regex as re
 
 def main():
     tree_data = {
