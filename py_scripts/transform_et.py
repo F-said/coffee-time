@@ -63,7 +63,7 @@ def main():
         output_data = pd.DataFrame(et_data)
         print(output_data)
 
-        path = os.path.join(csv_outpath_et, "br_et_2010_2020.csv")
+        path = os.path.join(csv_outpath_et, "br_et_2002_2020.csv")
         output_data.to_csv(path, index=False, doublequote=False)
 
     return

@@ -16,8 +16,8 @@ def main():
         "bear_mill_trees": [], 
         "nonbear_thous_hect": [],    
         "bear_thous_hect": [],   
-        "trees/hect_bear": [],
-        "trees/hect_nonbear": [],
+        "trees_hect_bear": [],
+        "trees_hect_nonbear": [],
         "year": []
     }   
 
@@ -106,15 +106,13 @@ def main():
             # get bearing and non-bearing trees/hectare 
             nonbearhect = tdf.iloc[7, :].tolist()
             nonbearhect.remove("Non-Bearing")
-            nonbearhect = [int(v) for v in nonbearh]
-
-            tree_data["trees/hect_nonbear"] += nonbearhect
+            nonbearhect = [int(v) for v in nonbearhect]
+            tree_data["trees_hect_nonbear"] += nonbearhect
 
             bearhect = tdf.iloc[8, :].tolist()
             bearhect.remove("Bearing")
-            bearhect = [int(v) for v in bearh]
-
-            tree_data["trees/hect_bear"] += bearhect
+            bearhect = [int(v) for v in bearhect]
+            tree_data["trees_hect_bear"] += bearhect
 
             # append years
             tree_data["year"] += years
@@ -124,7 +122,7 @@ def main():
         # save to df and tree_data
         output_data = pd.DataFrame(tree_data)
 
-        path = os.path.join(csv_outpath_growth, "br_coffee_growth_2003_2023.csv")
+        path = os.path.join(csv_outpath_growth, "br_coffee_growth_2002_2023.csv")
         output_data.to_csv(path, index=False, doublequote=False)
 
     return

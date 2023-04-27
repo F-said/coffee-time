@@ -66,7 +66,7 @@ def main():
         output_data = pd.DataFrame(weather_data)
         print(output_data)
 
-        path = os.path.join(csv_outpath_weather, "br_weather_2010_2020.csv")
+        path = os.path.join(csv_outpath_weather, "br_weather_2002_2022.csv")
         output_data.to_csv(path, index=False, doublequote=False)
 
     return

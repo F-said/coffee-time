@@ -1,37 +1,52 @@
-country,subdivision,year,avg_unemp_thou
-Brazil,Minas Gerais,2012,719.75
-Brazil,Espirito Santo,2012,136.5
-Brazil,Sao Paulo,2012,1651.75
-Brazil,Parana,2012,283.25
-Brazil,Minas Gerais,2013,696.25
-Brazil,Espirito Santo,2013,140.75
-Brazil,Sao Paulo,2013,1696.5
-Brazil,Parana,2013,252.5
-Brazil,Minas Gerais,2014,714.25
-Brazil,Espirito Santo,2014,121.5
-Brazil,Sao Paulo,2014,1684.75
-Brazil,Parana,2014,236.0
-Brazil,Minas Gerais,2015,924.25
-Brazil,Espirito Santo,2015,153.25
-Brazil,Sao Paulo,2015,2247.0
-Brazil,Parana,2015,344.25
-Brazil,Minas Gerais,2016,1223.0
-Brazil,Espirito Santo,2016,245.25
-Brazil,Sao Paulo,2016,3048.25
-Brazil,Parana,2016,491.0
-Brazil,Minas Gerais,2017,1356.5
-Brazil,Espirito Santo,2017,272.75
-Brazil,Sao Paulo,2017,3399.75
-Brazil,Parana,2017,540.0
-Brazil,Minas Gerais,2018,1211.0
-Brazil,Espirito Santo,2018,245.5
-Brazil,Sao Paulo,2018,3429.25
-Brazil,Parana,2018,533.0
-Brazil,Minas Gerais,2019,1150.0
-Brazil,Espirito Santo,2019,242.0
-Brazil,Sao Paulo,2019,3265.5
-Brazil,Parana,2019,529.75
-Brazil,Minas Gerais,2020,1320.0
-Brazil,Espirito Santo,2020,243.0
-Brazil,Sao Paulo,2020,3151.0
-Brazil,Parana,2020,487.0
+country,subdivision,year,avg_unemp_perc
+Brazil,Minas Gerais,2012,6.975
+Brazil,Espirito Santo,2012,7.125
+Brazil,Sao Paulo,2012,7.275
+Brazil,Parana,2012,5.025
+Brazil,Minas Gerais,2013,6.65
+Brazil,Espirito Santo,2013,7.15
+Brazil,Sao Paulo,2013,7.325
+Brazil,Parana,2013,4.4
+Brazil,Minas Gerais,2014,6.8
+Brazil,Espirito Santo,2014,6.275
+Brazil,Sao Paulo,2014,7.225
+Brazil,Parana,2014,4.125
+Brazil,Minas Gerais,2015,8.625
+Brazil,Espirito Santo,2015,7.85
+Brazil,Sao Paulo,2015,9.475
+Brazil,Parana,2015,5.925
+Brazil,Minas Gerais,2016,11.2
+Brazil,Espirito Santo,2016,12.375
+Brazil,Sao Paulo,2016,12.45
+Brazil,Parana,2016,8.3
+Brazil,Minas Gerais,2017,12.25
+Brazil,Espirito Santo,2017,13.275
+Brazil,Sao Paulo,2017,13.525
+Brazil,Parana,2017,9.05
+Brazil,Minas Gerais,2018,10.775
+Brazil,Espirito Santo,2018,11.675
+Brazil,Sao Paulo,2018,13.45
+Brazil,Parana,2018,8.85
+Brazil,Minas Gerais,2019,10.1
+Brazil,Espirito Santo,2019,11.1
+Brazil,Sao Paulo,2019,12.55
+Brazil,Parana,2019,8.65
+Brazil,Minas Gerais,2020,12.75
+Brazil,Espirito Santo,2020,12.875
+Brazil,Sao Paulo,2020,14.1
+Brazil,Parana,2020,9.55
+Brazil,Minas Gerais,2021,11.65
+Brazil,Espirito Santo,2021,11.125
+Brazil,Sao Paulo,2021,13.425
+Brazil,Parana,2021,8.35
+Brazil,Minas Gerais,2022,7.15
+Brazil,Espirito Santo,2022,7.925
+Brazil,Sao Paulo,2022,9.075
+Brazil,Parana,2022,5.825
+Brazil,Parana,2002,6.95
+Brazil,Parana,2003,7.16
+Brazil,Parana,2004,6.15
+Brazil,Parana,2005,6.71
+Brazil,Parana,2006,6.53
+Brazil,Parana,2007,5.91
+Brazil,Parana,2008,4.59

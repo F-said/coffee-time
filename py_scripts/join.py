@@ -11,10 +11,10 @@ import pandas as pd
 def main():
 
     # get brazil data
-    growth = os.path.join(csv_outpath_growth, "br_coffee_growth_2010_2023.csv")
-    prod = os.path.join(csv_outpath_prod, "br_coffee_production_2010_2023.csv")
-    et = os.path.join(csv_outpath_et, "br_et_2010_2020.csv")
-    weather = os.path.join(csv_outpath_weather, "br_weather_2010_2020.csv")
+    growth = os.path.join(csv_outpath_growth, "br_coffee_growth_2003_2023.csv")
+    prod = os.path.join(csv_outpath_prod, "br_coffee_production_2003_2023.csv")
+    et = os.path.join(csv_outpath_et, "br_et_2002_2020.csv")
+    weather = os.path.join(csv_outpath_weather, "br_weather_2003_2020.csv")
     unemployment = os.path.join(csv_outpath_econ, "br_avgunemp_2012_2020.csv")
 
     gdf = pd.read_csv(growth)

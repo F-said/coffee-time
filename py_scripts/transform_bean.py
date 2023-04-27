@@ -134,7 +134,7 @@ def main():
 
         # save to df and write
         output_data = pd.DataFrame(bean_data)
-        path = os.path.join(csv_outpath_prod, "br_coffee_production_2003_2023.csv")
+        path = os.path.join(csv_outpath_prod, "br_coffee_production_2002_2023.csv")
         output_data.to_csv(path, index=False, doublequote=False)
 
     return
