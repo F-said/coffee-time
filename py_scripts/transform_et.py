@@ -34,7 +34,7 @@ def main():
             code = csv[:2]
             subdiv = subdiv_code[code]
 
-            # get year (yearly evapo is total kg/mm^2)
+            # get year (yearly evapo is total kg/mm^2) for year mark from -1 year to now
             etdf["Year"] = etdf["Date"].str[:4].apply(lambda x: str(int(x) - 1))
             grouped = etdf.groupby("Year")
 
